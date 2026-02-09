@@ -1,0 +1,23 @@
+{
+  "repos": [
+    {
+      "tag": "public",
+      "url": "https://github.com/fortify/fcli-ci-test-public"
+    },
+    {
+      "tag": "private",
+      "url": "https://github.com/fortify/fcli-ci-test-private"
+    }
+  ],
+  "supportedOs": ["linux", "windows", "mac"],
+  "variableNames": [
+    "FCLI_FT_FOD_URL",
+    "FCLI_FT_SSC_URL"
+  ],
+  "secretNames": [
+    "FCLI_FT_FOD_CLIENT_ID",
+    "FCLI_FT_FOD_CLIENT_SECRET",
+    "FCLI_FT_SSC_TOKEN",
+    "FCLI_FT_SC_SAST_TOKEN"
+  ]
+}
