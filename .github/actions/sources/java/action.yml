@@ -13,14 +13,14 @@ runs:
   using: 'composite'
   steps:
     - name: Setup Java
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         distribution: temurin
         java-version: ${{ inputs.java-version }}
         cache: ${{ inputs.cache-maven == 'true' && 'maven' || '' }}
 
     - name: Set up Maven
-      uses: stCarolas/setup-maven@v5
+      uses: fortify/3rdparty-actions/actions/stcarolas/setup-maven/v5@main
       with:
         maven-version: 3.9.12
 
